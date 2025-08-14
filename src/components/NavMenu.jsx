@@ -7,6 +7,9 @@ const NavMenu = () => {
 <NavLink to="/" style={({isActive}) => isActive?{...styles.link,...styles.activeLink}:styles.link}>Home</NavLink>
 <NavLink to="/gallery" style={({isActive}) => isActive?{...styles.link,...styles.activeLink}:styles.link}>Gallery</NavLink>
 <NavLink to="/users" style={({isActive}) => isActive?{...styles.link,...styles.activeLink}:styles.link}>Users</NavLink>
+<NavLink to="/articles" style={({isActive}) => isActive?{...styles.link,...styles.activeLink}:styles.link}>Articles</NavLink>
+<NavLink to="/doctors" style={({isActive}) => isActive?{...styles.link,...styles.activeLink}:styles.link}>Doctors</NavLink>
+
 
     </nav>
   )
