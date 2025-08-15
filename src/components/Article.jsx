@@ -9,7 +9,7 @@ const Article = ({articleId}) => {
  axios.get('/api/Articles/get-article-item-by-id?id=' + articleId)
     .then((response) => {setArticle(response.data.data)})
     .catch(error => console.error('Error fetching articles:', error));
-    })
+    },[]);
   return (
 <>  
 <h1 className="article-title">{article.articleTitle}</h1>
